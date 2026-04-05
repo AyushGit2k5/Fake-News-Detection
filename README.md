@@ -25,5 +25,9 @@ Logistic Regression outperformed Naive Bayes across all evaluation metrics, achi
 
 ## Future Improvements
 - Experiment with n-grams and feature tuning  
-- Improve preprocessing (e.g., stopword handling, normalization)  
+- Improve preprocessing (e.g., stopword handling, normalization)
+
+## Visualizations
+- Confusion matrices for both models  
+- Bar chart comparing accuracy, precision, recall, and F1-score  
 - Explore advanced models such as transformer-based architectures (e.g., BERT)  
