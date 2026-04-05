@@ -1,23 +1,29 @@
-# Fake News Detection
+# Fake News Detection (NLP)
 
 ## Problem
-Built a binary text classification system to automatically detect fake news articles and distinguish them from real news content.
+Developed a binary text classification system to identify fake news articles and distinguish them from real news content.
 
 ## Dataset
-Used a public fake news dataset consisting of labeled news articles (real vs fake). The dataset contains textual news content with overlapping linguistic patterns between classes.
+Used a public fake news dataset consisting of labeled news articles (real vs fake). The dataset contains textual content with overlapping linguistic patterns, making classification non-trivial.
 
 ## Approach
-Implemented and compared two classical NLP baselines:
-- TF-IDF with Multinomial Naive Bayes
-- TF-IDF with Logistic Regression  
-
-Both models were trained using identical preprocessing pipelines to ensure a fair comparison.
+- Applied TF-IDF vectorization to convert text data into numerical features.  
+- Implemented and compared two baseline models:
+  - Multinomial Naive Bayes  
+  - Logistic Regression  
+- Used a consistent preprocessing pipeline (text cleaning, tokenization, TF-IDF) across both models to ensure fair comparison.  
 
 ## Evaluation
-Models were evaluated using accuracy, precision, recall, F1-score, and confusion matrices on a held-out test set.
+Evaluated models on a held-out test set using accuracy, precision, recall, F1-score, and confusion matrices.
 
 ## Results
-Logistic Regression achieved stronger overall performance than Naive Bayes, demonstrating better separation of overlapping language patterns in real and fake news articles.
+Logistic Regression outperformed Naive Bayes across all evaluation metrics, achieving higher accuracy and F1-score, indicating better handling of overlapping and sparse textual features.
+
+## Key Learnings
+- Linear models such as Logistic Regression perform strongly on TF-IDF representations for text classification tasks.  
+- Naive Bayes provides a fast baseline but may struggle with complex language patterns.  
 
 ## Future Improvements
-Potential improvements include n-gram tuning, improved text preprocessing, handling class imbalance, and experimenting with transformer-based models for richer contextual understanding.
+- Experiment with n-grams and feature tuning  
+- Improve preprocessing (e.g., stopword handling, normalization)  
+- Explore advanced models such as transformer-based architectures (e.g., BERT)  
